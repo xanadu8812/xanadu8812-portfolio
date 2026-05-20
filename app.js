@@ -1,138 +1,203 @@
 const CONFIG = {
-  email: "shravankumarps1995@gmail.com",
-  bookUrl: "#"
+  email: "henry8812@gmail.com",
+  github: "https://github.com/xanadu8812",
+  linkedin: "https://www.linkedin.com/in/henry-gomez-98a954b1/"
 };
 
-const PROJECTS = [
-  {
-    tags: ["AI", "Generative", "Mobile SaaS", "SMB Tools"],
-    title: "Launching Wizad.AI 0 to 1 : An AI-Powered design tool for SME's.",
-    support: "5M+ Creatives, 300K+ Downloads, Top-3 in Design category",
-    image: "assets/project-wizad.svg"
+const I18N = {
+  es: {
+    "nav.about": "Sobre mí",
+    "nav.stack": "Stack",
+    "nav.project": "Proyecto",
+    "nav.contact": "Contacto",
+    "hero.eyebrow": "Colombia · 16 años de experiencia",
+    "hero.primaryCta": "Contactar",
+    "hero.secondaryCta": "Copiar correo",
+    "hero.title": "Ingeniero de desarrollo full stack orientado a telecomunicaciones, infraestructura y plataformas digitales de alto impacto.",
+    "hero.body": "Diseño, construyo y estabilizo productos web con visión de negocio, base técnica sólida y foco operativo. Combino desarrollo full stack, CMS, virtualización, VoIP y administración de infraestructura para llevar ideas a producción con criterio práctico.",
+    "facts.roleLabel": "Rol",
+    "facts.roleValue": "Ingeniero de desarrollo full stack",
+    "facts.locationLabel": "Ubicación",
+    "facts.locationValue": "Colombia",
+    "facts.focusLabel": "Foco",
+    "facts.focusValue": "Telecomunicaciones e infraestructura",
+    "panel.kicker": "Áreas principales",
+    "panel.webTitle": "Full Stack Web",
+    "panel.webBody": "Frontend, backend, APIs, integraciones y despliegue.",
+    "panel.cmsTitle": "CMS & Plataformas",
+    "panel.cmsBody": "WordPress y otros CMS para entornos corporativos y comerciales.",
+    "panel.infraTitle": "Infra & Telco",
+    "panel.infraBody": "Proxmox, VoIP con Asterisk, virtualización y operación técnica.",
+    "about.kicker": "Perfil",
+    "about.title": "Construyo soluciones útiles, estables y listas para operar.",
+    "about.body1": "Mi perfil combina producto, implementación y operación. Trabajo tanto en la capa visible de una plataforma como en la infraestructura que la sostiene, con enfoque en rendimiento, continuidad y mantenimiento real.",
+    "about.body2": "Además del desarrollo full stack, manejo CMS ampliamente usados, automatización de despliegues, soporte técnico y componentes de telecomunicaciones e infraestructura que suelen ser críticos en entornos empresariales.",
+    "stack.kicker": "Capacidades",
+    "stack.title": "Stack principal y ecosistema técnico.",
+    "stack.webTitle": "Desarrollo full stack",
+    "stack.webBody": "React, Next.js, JavaScript, TypeScript, Node.js, Express, APIs REST y arquitectura web moderna.",
+    "stack.cmsTitle": "CMS y plataformas",
+    "stack.cmsBody": "WordPress, integración de CMS, sitios administrables, flujos editoriales y soluciones web orientadas a negocio.",
+    "stack.infraTitle": "Infraestructura y telecom",
+    "stack.infraBody": "Proxmox, Asterisk, VoIP, virtualización, redes, servicios de infraestructura y operación técnica de plataformas.",
+    "project.kicker": "Proyecto destacado",
+    "project.title": "Trabajo actual en producto digital.",
+    "project.type": "Aplicación web estática",
+    "project.name": "Media Evaluation Platform Static",
+    "project.body": "Plataforma web orientada a descubrimiento y evaluación de contenido, con mejoras continuas en búsqueda avanzada, UX, estabilidad de navegación, control de versiones y operación mediante GitHub.",
+    "project.primary": "Ver proyecto",
+    "contact.kicker": "Contacto",
+    "contact.title": "Disponible para colaborar en productos, infraestructura y soluciones técnicas.",
+    "contact.emailLabel": "Correo",
+    "footer.copy": "Portafolio bilingüe en construcción continua.",
+    "copied": "Correo copiado",
+    "copyDefault": "Copiar correo"
   },
-  {
-    tags: ["E-Commerce", "B2B", "Enterprise", "Rebranding & Redesign"],
-    title: "Designing a Scalable B2B-ready E-commerce Platform for Premium Furniture Brand in UAE - NavoErgnomics",
-    image: "assets/project-navo.svg"
-  },
-  {
-    tags: ["Enterprise", "ERP", "B2B", "Multi-role", "Operations"],
-    title: "End-to-End Sales, Finance & Logistics ERP Workspace for AGS, UAE",
-    image: "assets/project-ags-erp.svg"
-  },
-  {
-    tags: ["Fintech", "Multi-chain", "P2P", "Currency Exchange"],
-    title: "Building Scalable Design System, Multi-Currency Wallet and Payments App for Global Daily Fintech",
-    image: "assets/project-fintech.svg"
-  },
-  {
-    tags: ["B2B/B2C E-Commerce", "Solar Energy", "Conversion", "Rebranding"],
-    title: "Reducing Buying Friction and Improving Conversion paths for AGS’s solar energy E-Commerce Website",
-    image: "assets/project-solar.svg"
-  },
-  {
-    tags: ["Credential Manager", "Security", "B2B SaaS", "Open-Source"],
-    title: "Launching Osvauld 0 to 1 : Trustworthy Shared Credentials for Security-Conscious Teams",
-    image: "assets/project-osvauld.svg"
+  en: {
+    "nav.about": "About",
+    "nav.stack": "Stack",
+    "nav.project": "Project",
+    "nav.contact": "Contact",
+    "hero.eyebrow": "Colombia · 16 years of experience",
+    "hero.primaryCta": "Get in touch",
+    "hero.secondaryCta": "Copy e-mail",
+    "hero.title": "Full stack development engineer focused on telecommunications, infrastructure and high-impact digital platforms.",
+    "hero.body": "I design, build and stabilize web products with business awareness, strong technical foundations and operational focus. I combine full stack development, CMS work, virtualization, VoIP and infrastructure administration to move ideas into production with practical judgment.",
+    "facts.roleLabel": "Role",
+    "facts.roleValue": "Full stack development engineer",
+    "facts.locationLabel": "Location",
+    "facts.locationValue": "Colombia",
+    "facts.focusLabel": "Focus",
+    "facts.focusValue": "Telecommunications and infrastructure",
+    "panel.kicker": "Core areas",
+    "panel.webTitle": "Full Stack Web",
+    "panel.webBody": "Frontend, backend, APIs, integrations and deployment.",
+    "panel.cmsTitle": "CMS & Platforms",
+    "panel.cmsBody": "WordPress and other CMS solutions for business and commercial environments.",
+    "panel.infraTitle": "Infra & Telco",
+    "panel.infraBody": "Proxmox, Asterisk-based VoIP, virtualization and technical operations.",
+    "about.kicker": "Profile",
+    "about.title": "I build useful, stable solutions that are ready to operate.",
+    "about.body1": "My profile combines product thinking, implementation and operations. I work on both the visible layer of a platform and the infrastructure that supports it, with a focus on performance, continuity and maintainability.",
+    "about.body2": "Beyond full stack development, I work with widely used CMS platforms, deployment automation, technical support, and telecom and infrastructure components that are often critical in enterprise environments.",
+    "stack.kicker": "Capabilities",
+    "stack.title": "Primary stack and technical ecosystem.",
+    "stack.webTitle": "Full stack development",
+    "stack.webBody": "React, Next.js, JavaScript, TypeScript, Node.js, Express, REST APIs and modern web architecture.",
+    "stack.cmsTitle": "CMS and platforms",
+    "stack.cmsBody": "WordPress, CMS integrations, manageable sites, editorial flows and business-oriented web solutions.",
+    "stack.infraTitle": "Infrastructure and telecom",
+    "stack.infraBody": "Proxmox, Asterisk, VoIP, virtualization, networking, infrastructure services and technical platform operations.",
+    "project.kicker": "Featured project",
+    "project.title": "Current work in digital product delivery.",
+    "project.type": "Static web application",
+    "project.name": "Media Evaluation Platform Static",
+    "project.body": "Web platform focused on content discovery and evaluation, with continuous improvements in advanced search, UX, navigation stability, version control and GitHub-driven operations.",
+    "project.primary": "View project",
+    "contact.kicker": "Contact",
+    "contact.title": "Available to collaborate on products, infrastructure and technical solutions.",
+    "contact.emailLabel": "E-mail",
+    "footer.copy": "Bilingual portfolio under continuous development.",
+    "copied": "E-mail copied",
+    "copyDefault": "Copy e-mail"
   }
+};
+
+const SKILLS = [
+  "React",
+  "Next.js",
+  "JavaScript",
+  "TypeScript",
+  "Node.js",
+  "Express",
+  "REST APIs",
+  "WordPress",
+  "CMS Integration",
+  "Proxmox",
+  "Asterisk",
+  "VoIP",
+  "Virtualization",
+  "Networking",
+  "Linux",
+  "GitHub",
+  "UX/UI",
+  "Technical Support"
 ];
 
-const PEOPLE = [
-  { name: "Kurian Mathew", role: "Founder OwnerWise", avatar: "assets/av-kurian.svg", quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-  { name: "Thurga Devi", role: "MaskEX Global", avatar: "assets/av-thurga.svg", quote: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },
-  { name: "Ossama Zaour", role: "MaskEX Global", avatar: "assets/av-ossama.svg", quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
-  { name: "Yuliia Bilyk", role: "Founder - NoDressCode", avatar: "assets/av-yuliia.svg", quote: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." },
-  { name: "Abduljalil Chhada", role: "CEO - AGS International", avatar: "assets/av-abduljalil.svg", quote: "Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet." },
-  { name: "Jean Augustin", role: "MaskEX Global", avatar: "assets/av-jean.svg", quote: "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa." },
-  { name: "Ayman Saath", role: "Government Relation Officer", avatar: "assets/av-ayman.svg", quote: "Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra." },
-  { name: "Sepideh Yazdi", role: "Founder of FigChallange Community", avatar: "assets/av-sepideh.svg", quote: "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh." },
-  { name: "Mohamad Shihade", role: "Business Development Specialist - AGS International", avatar: "assets/av-mohamad.svg", quote: "Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor." }
-];
-
-function $(sel) { return document.querySelector(sel); }
-
-function escapeHtml(text) {
-  return String(text ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
+function $(selector) {
+  return document.querySelector(selector);
 }
 
-async function copyEmail(btn) {
-  const value = CONFIG.email;
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    "\"": "&quot;",
+    "'": "&#39;"
+  }[char]));
+}
+
+function getLanguage() {
+  const saved = localStorage.getItem("portfolio_lang");
+  return saved && I18N[saved] ? saved : "es";
+}
+
+function setLanguage(language) {
+  const lang = I18N[language] ? language : "es";
+  localStorage.setItem("portfolio_lang", lang);
+  document.documentElement.lang = lang;
+  document.title = lang === "es"
+    ? "Henry Gomez · Full Stack · Telecom & Infra"
+    : "Henry Gomez · Full Stack · Telecom & Infra";
+  $("#brandSubtitle").textContent = lang === "es"
+    ? "Full Stack · Telecom · Infra"
+    : "Full Stack · Telecom · Infra";
+  $("#heroTitle").textContent = I18N[lang]["hero.title"];
+  $("#heroBody").textContent = I18N[lang]["hero.body"];
+  $("#aboutBody1").textContent = I18N[lang]["about.body1"];
+  $("#aboutBody2").textContent = I18N[lang]["about.body2"];
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    const key = node.getAttribute("data-i18n");
+    if (!key || !I18N[lang][key]) return;
+    node.textContent = I18N[lang][key];
+  });
+  document.querySelectorAll(".lang-btn").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.lang === lang);
+  });
+}
+
+function renderSkills() {
+  const root = $("#skillChips");
+  if (!root) return;
+  root.innerHTML = SKILLS.map((skill) => `<span>${escapeHtml(skill)}</span>`).join("");
+}
+
+async function copyEmail() {
+  const button = $("#copyEmailBtn");
+  if (!button) return;
   try {
-    await navigator.clipboard.writeText(value);
-    if (btn) btn.textContent = "Copied";
-    window.setTimeout(() => { if (btn) btn.textContent = "Copy e-mail"; }, 1200);
+    await navigator.clipboard.writeText(CONFIG.email);
+    const lang = getLanguage();
+    button.textContent = I18N[lang].copied;
+    window.setTimeout(() => {
+      const nextLang = getLanguage();
+      button.textContent = I18N[nextLang].copyDefault;
+    }, 1200);
   } catch {
-    // Ignore silently; spec does not mention error UI.
+    window.location.href = `mailto:${CONFIG.email}`;
   }
 }
 
-function renderProjects() {
-  const root = $("#projectGrid");
-  if (!root) return;
-  root.innerHTML = PROJECTS.map((p) => {
-    const tags = p.tags.map((t) => `<span class="ptag">${escapeHtml(t)}</span>`).join("");
-    const support = p.support ? `<div class="psub">${escapeHtml(p.support)}</div>` : "";
-    return `
-      <article class="pcard">
-        <div class="pmedia"><img src="${escapeHtml(p.image)}" alt="" /></div>
-        <div class="pbody">
-          <div class="ptags">${tags}</div>
-          <div class="ptitle">${escapeHtml(p.title)}</div>
-          ${support}
-          <a class="pcta" href="#" rel="noreferrer">Read Case Study</a>
-        </div>
-      </article>
-    `;
-  }).join("");
+function bindEvents() {
+  $("#copyEmailBtn")?.addEventListener("click", () => {
+    void copyEmail();
+  });
+  document.querySelectorAll(".lang-btn").forEach((button) => {
+    button.addEventListener("click", () => setLanguage(button.dataset.lang || "es"));
+  });
 }
 
-function renderTestimonials() {
-  const root = $("#testimonialGrid");
-  if (!root) return;
-  root.innerHTML = PEOPLE.map((p) => {
-    const quote = escapeHtml(p.quote || "");
-    return `
-      <article class="tcard">
-        <div class="ttext">“${quote}”</div>
-        <div class="tperson">
-          <img class="tavatar" src="${escapeHtml(p.avatar)}" alt="" />
-          <div>
-            <div class="tname">${escapeHtml(p.name)}</div>
-            <div class="trole">${escapeHtml(p.role)}</div>
-          </div>
-        </div>
-      </article>
-    `;
-  }).join("");
-}
-
-function bindButtons() {
-  const btns = [$("#copyEmailA"), $("#copyEmailB"), $("#copyEmailC")].filter(Boolean);
-  for (const btn of btns) btn.addEventListener("click", () => copyEmail(btn));
-
-  const bookA = $("#bookCallA");
-  const bookB = $("#bookCallB");
-  if (bookA) bookA.href = CONFIG.bookUrl;
-  if (bookB) bookB.href = CONFIG.bookUrl;
-}
-
-function bindNavState() {
-  const links = [...document.querySelectorAll(".s-nav a")];
-  const sections = links
-    .map((link) => document.querySelector(link.getAttribute("href") || ""))
-    .filter(Boolean);
-
-  const observer = new IntersectionObserver((entries) => {
-    const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-    if (!visible) return;
-    const id = `#${visible.target.id}`;
-    links.forEach((link) => link.classList.toggle("is-active", link.getAttribute("href") === id));
-  }, { rootMargin: "-30% 0px -55% 0px", threshold: [0.15, 0.3, 0.5, 0.75] });
-
-  sections.forEach((section) => observer.observe(section));
-}
-
-renderProjects();
-renderTestimonials();
-bindButtons();
-bindNavState();
+renderSkills();
+bindEvents();
+setLanguage(getLanguage());

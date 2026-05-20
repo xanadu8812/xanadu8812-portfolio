@@ -1,150 +1,185 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="dark light" />
-    <title>ShravanKumar P S · Portfolio</title>
-    <meta name="description" content="Product Designer portfolio: featured projects, testimonials, and contact." />
+    <meta name="color-scheme" content="dark" />
+    <title>Henry Gomez · Full Stack · Telecom & Infra</title>
+    <meta
+      name="description"
+      content="Portafolio bilingüe de Henry Gomez, ingeniero de desarrollo full stack enfocado en telecomunicaciones, infraestructura y plataformas digitales."
+    />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg" aria-hidden="true"></div>
-    <aside class="sidebar">
-      <div class="sidebar-inner">
-        <div class="s-avatar"><img src="assets/avatar-01.svg" alt="" /></div>
-        <div class="s-name">ShravanKumar P S</div>
-        <div class="s-role">Product Designer</div>
-        <nav class="s-nav" aria-label="Sidebar navigation">
-          <a class="is-active" href="#top">Homepage</a>
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
+    <div class="page-glow" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Henry Gomez">
+        <span class="brand-mark">HG</span>
+        <span class="brand-copy">
+          <strong>Henry Gomez</strong>
+          <span id="brandSubtitle">Full Stack · Telecom · Infra</span>
+        </span>
+      </a>
+      <div class="topbar-actions">
+        <nav class="topnav" aria-label="Primary">
+          <a href="#about" data-i18n="nav.about">Sobre mí</a>
+          <a href="#stack" data-i18n="nav.stack">Stack</a>
+          <a href="#project" data-i18n="nav.project">Proyecto</a>
+          <a href="#contact" data-i18n="nav.contact">Contacto</a>
         </nav>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn is-active" type="button" data-lang="es">ES</button>
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        </div>
       </div>
-    </aside>
+    </header>
 
-    <main id="top" class="page">
+    <main id="top" class="shell">
       <section class="hero">
-        <div class="hero-grid">
-          <div class="hero-left">
-            <div class="hero-top">
-              <div class="idblock">
-                <img class="avatar" src="assets/avatar-01.svg" alt="" />
-                <div class="idcopy">
-                  <div class="idname">ShravanKumar P S</div>
-                  <div class="idrole">Product Designer</div>
-                </div>
+        <div class="hero-copy">
+          <div class="eyebrow" data-i18n="hero.eyebrow">Colombia · 16 años de experiencia</div>
+          <h1 id="heroTitle">
+            Ingeniero de desarrollo full stack orientado a telecomunicaciones, infraestructura y plataformas digitales de alto impacto.
+          </h1>
+          <p id="heroBody" class="hero-body">
+            Diseño, construyo y estabilizo productos web con visión de negocio, base técnica sólida y foco operativo. Combino desarrollo full stack, CMS, virtualización, VoIP y administración de infraestructura para llevar ideas a producción con criterio práctico.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-fill" href="#contact" data-i18n="hero.primaryCta">Contactar</a>
+            <button class="btn btn-ghost" id="copyEmailBtn" type="button" data-i18n="hero.secondaryCta">Copiar correo</button>
+          </div>
+          <ul class="hero-facts" aria-label="Profile facts">
+            <li>
+              <span class="fact-label" data-i18n="facts.roleLabel">Rol</span>
+              <strong data-i18n="facts.roleValue">Ingeniero de desarrollo full stack</strong>
+            </li>
+            <li>
+              <span class="fact-label" data-i18n="facts.locationLabel">Ubicación</span>
+              <strong data-i18n="facts.locationValue">Colombia</strong>
+            </li>
+            <li>
+              <span class="fact-label" data-i18n="facts.focusLabel">Foco</span>
+              <strong data-i18n="facts.focusValue">Telecomunicaciones e infraestructura</strong>
+            </li>
+          </ul>
+        </div>
+        <aside class="hero-panel">
+          <div class="panel-card">
+            <span class="panel-kicker" data-i18n="panel.kicker">Áreas principales</span>
+            <div class="signal-list">
+              <div class="signal-item">
+                <strong data-i18n="panel.webTitle">Full Stack Web</strong>
+                <span data-i18n="panel.webBody">Frontend, backend, APIs, integraciones y despliegue.</span>
               </div>
-              <div class="hero-media" aria-label="Hero media">
-                <img class="hmedia hmedia-a" src="assets/hero-01.svg" alt="" />
-                <img class="hmedia hmedia-b" src="assets/hero-02.svg" alt="" />
-                <img class="hmedia hmedia-c" src="assets/hero-03.svg" alt="" />
+              <div class="signal-item">
+                <strong data-i18n="panel.cmsTitle">CMS & Plataformas</strong>
+                <span data-i18n="panel.cmsBody">WordPress y otros CMS para entornos corporativos y comerciales.</span>
+              </div>
+              <div class="signal-item">
+                <strong data-i18n="panel.infraTitle">Infra & Telco</strong>
+                <span data-i18n="panel.infraBody">Proxmox, VoIP con Asterisk, virtualización y operación técnica.</span>
               </div>
             </div>
+          </div>
+        </aside>
+      </section>
 
-            <div class="availability" aria-label="Availability">
-              <span class="avail-dot" aria-hidden="true"></span>
-              <span>Available for Projects ( Dubai / Remote )</span>
-            </div>
-
-            <h1 class="hero-title">
-              <span>PRODUCT DESIGNER</span>
-              <span>FOR TEAMS SHIPPING</span>
-              <span>FROM ZERO TO</span>
-              <span>WORKING PRODUCT</span>
-            </h1>
-
-            <p class="hero-body">
-              Stuck with deadlines, confusing flows, or generic AI designs that don’t convert? I help startups and scaleups to turn messy product problems into clear, business aware scalable UX that drives growth.
+      <section id="about" class="section">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="about.kicker">Perfil</span>
+          <h2 data-i18n="about.title">Construyo soluciones útiles, estables y listas para operar.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-card">
+            <p id="aboutBody1">
+              Mi perfil combina producto, implementación y operación. Trabajo tanto en la capa visible de una plataforma como en la infraestructura que la sostiene, con enfoque en rendimiento, continuidad y mantenimiento real.
             </p>
-
-            <div class="cta-rows" aria-label="Hero CTAs">
-              <div class="cta-row">
-                <button class="btn btn-outline" id="copyEmailA" type="button">Copy e-mail</button>
-                <a class="btn btn-fill" id="bookCallA" href="#" rel="noreferrer">Book a Free 30min Intro Call</a>
-              </div>
-              <div class="cta-row">
-                <button class="btn btn-outline" id="copyEmailB" type="button">Copy e-mail</button>
-                <a class="btn btn-outline" href="#projects">View Casestudies</a>
-              </div>
-            </div>
-          </div>
-          <div class="hero-right">
-            <img class="astronaut" src="assets/hero-astronaut.svg" alt="" />
-            <div class="hero-schematic"></div>
-          </div>
+          </article>
+          <article class="about-card">
+            <p id="aboutBody2">
+              Además del desarrollo full stack, manejo CMS ampliamente usados, automatización de despliegues, soporte técnico y componentes de telecomunicaciones e infraestructura que suelen ser críticos en entornos empresariales.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section id="projects" class="projects">
-        <div class="content-col">
-          <h2 class="section-title">
-            <span>FEATURED PROJECTS,</span>
-            <span>REAL IMPACT.</span>
-          </h2>
-          <div id="projectGrid" class="project-stack" aria-label="Featured projects"></div>
+      <section id="stack" class="section">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="stack.kicker">Capacidades</span>
+          <h2 data-i18n="stack.title">Stack principal y ecosistema técnico.</h2>
         </div>
+        <div class="stack-grid">
+          <article class="stack-card">
+            <h3 data-i18n="stack.webTitle">Desarrollo full stack</h3>
+            <p data-i18n="stack.webBody">React, Next.js, JavaScript, TypeScript, Node.js, Express, APIs REST y arquitectura web moderna.</p>
+          </article>
+          <article class="stack-card">
+            <h3 data-i18n="stack.cmsTitle">CMS y plataformas</h3>
+            <p data-i18n="stack.cmsBody">WordPress, integración de CMS, sitios administrables, flujos editoriales y soluciones web orientadas a negocio.</p>
+          </article>
+          <article class="stack-card">
+            <h3 data-i18n="stack.infraTitle">Infraestructura y telecom</h3>
+            <p data-i18n="stack.infraBody">Proxmox, Asterisk, VoIP, virtualización, redes, servicios de infraestructura y operación técnica de plataformas.</p>
+          </article>
+        </div>
+        <div class="chips" id="skillChips" aria-label="Technology list"></div>
       </section>
 
-      <section class="transition">
-        <div class="content-col">
-          <img class="transition-media" src="assets/transition-01.svg" alt="" />
+      <section id="project" class="section">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="project.kicker">Proyecto destacado</span>
+          <h2 data-i18n="project.title">Trabajo actual en producto digital.</h2>
         </div>
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-badge">Devil TV</span>
+            <span class="project-type" data-i18n="project.type">Aplicación web estática</span>
+          </div>
+          <h3 data-i18n="project.name">Media Evaluation Platform Static</h3>
+          <p data-i18n="project.body">
+            Plataforma web orientada a descubrimiento y evaluación de contenido, con mejoras continuas en búsqueda avanzada, UX, estabilidad de navegación, control de versiones y operación mediante GitHub.
+          </p>
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>UX/UI</span>
+            <span>GitHub Pages</span>
+            <span>Search UX</span>
+            <span>Release Flow</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-fill" href="https://lerna-admin.github.io/media-evaluation-platform-static/" target="_blank" rel="noreferrer" data-i18n="project.primary">Ver proyecto</a>
+          </div>
+        </article>
       </section>
 
-      <section class="testimonials">
-        <div class="content-col">
-          <h2 class="section-title">
-            <span>KIND WORDS,</span>
-            <span>EVEN KINDER PEOPLE</span>
-          </h2>
-          <div id="testimonialGrid" class="testimonial-grid" aria-label="Testimonials"></div>
+      <section id="contact" class="section">
+        <div class="section-head">
+          <span class="section-kicker" data-i18n="contact.kicker">Contacto</span>
+          <h2 data-i18n="contact.title">Disponible para colaborar en productos, infraestructura y soluciones técnicas.</h2>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:henry8812@gmail.com">
+            <span class="contact-label" data-i18n="contact.emailLabel">Correo</span>
+            <strong>henry8812@gmail.com</strong>
+          </a>
+          <a class="contact-card" href="https://github.com/xanadu8812" target="_blank" rel="noreferrer">
+            <span class="contact-label">GitHub</span>
+            <strong>xanadu8812</strong>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/henry-gomez-98a954b1/" target="_blank" rel="noreferrer">
+            <span class="contact-label">LinkedIn</span>
+            <strong>Henry Gomez</strong>
+          </a>
         </div>
       </section>
-
-      <section class="finalcta">
-        <div class="content-col">
-          <h2 class="final-title">READY TO BUILD?</h2>
-          <div class="slashline">// product design // systems thinking // ai-assisted workflows //</div>
-          <div class="questions" aria-label="Questions">
-            <div>✦ Are you facing a design challenge right now?</div>
-            <div>✦ Does your product need a quick rethink?</div>
-            <div>✦ Seeking a collaborator to shape your ideas?</div>
-            <div>✦ Or have something worth building?</div>
-          </div>
-          <div class="final-actions">
-            <button class="btn btn-outline" id="copyEmailC" type="button">Copy e-mail</button>
-            <a class="btn btn-fill" id="bookCallB" href="#" rel="noreferrer">Book a Free 30min Intro Call</a>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="content-col footer-inner">
-          <div class="foot-col">
-            <div class="foot-head">Connect</div>
-            <a class="foot-link" href="#" rel="noreferrer">Talk to me on Linkedin</a>
-          </div>
-          <div class="foot-col">
-            <div class="foot-label">E-Mail</div>
-            <div class="foot-value" id="footerEmail">shravankumarps1995@gmail.com</div>
-          </div>
-          <div class="foot-col">
-            <div class="foot-label">Call / WhatsApp</div>
-            <div class="foot-value">+971 523708369</div>
-          </div>
-        </div>
-        <div class="content-col foot-legal">
-          <div class="copy">©2026 Design Portfolio ShravanKumar P S</div>
-          <div class="legal">
-            ALL CONTENTS OF THIS WEBSITE ARE THE PROPERTY OWNED BY SHRAVANKUMAR P S. NO PART OF THIS SITE, INCLUDING ALL TEXT AND IMAGES, MAY BE REPRODUCED IN ANY FORM WITHOUT PRIOR CONSENT. I’ll SUE YOU. NO CAP : )
-          </div>
-          <a class="framer" href="#" rel="noreferrer">Create a free website with Framer, the website builder loved by startups, designers and agencies.</a>
-        </div>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <span>© 2026 Henry Gomez</span>
+      <span data-i18n="footer.copy">Portafolio bilingüe en construcción continua.</span>
+    </footer>
 
     <script src="app.js"></script>
   </body>
