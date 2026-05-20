@@ -3,183 +3,152 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="dark" />
-    <title>Henry Gomez · Full Stack · Telecom & Infra</title>
-    <meta
-      name="description"
-      content="Portafolio bilingüe de Henry Gomez, ingeniero de desarrollo full stack enfocado en telecomunicaciones, infraestructura y plataformas digitales."
-    />
+    <meta name="color-scheme" content="dark light" />
+    <title>Henry Gomez · Portfolio</title>
+    <meta name="description" content="Portfolio bilingue de Henry Gomez, ingeniero de desarrollo full stack enfocado en telecomunicaciones e infraestructura." />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-glow" aria-hidden="true"></div>
-    <header class="topbar">
-      <a class="brand" href="#top" aria-label="Henry Gomez">
-        <span class="brand-mark">HG</span>
-        <span class="brand-copy">
-          <strong>Henry Gomez</strong>
-          <span id="brandSubtitle">Full Stack · Telecom · Infra</span>
-        </span>
-      </a>
-      <div class="topbar-actions">
-        <nav class="topnav" aria-label="Primary">
-          <a href="#about" data-i18n="nav.about">Sobre mí</a>
-          <a href="#stack" data-i18n="nav.stack">Stack</a>
-          <a href="#project" data-i18n="nav.project">Proyecto</a>
-          <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    <div class="bg" aria-hidden="true"></div>
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="s-avatar"><img src="assets/avatar-01.svg" alt="" /></div>
+        <div class="s-name" id="sidebarName">Henry Gomez</div>
+        <div class="s-role" id="sidebarRole">Ingeniero de desarrollo full stack</div>
+        <nav class="s-nav" aria-label="Sidebar navigation">
+          <a class="is-active" href="#top" id="navHome">Inicio</a>
+          <a href="#projects" id="navProjects">Proyecto</a>
+          <a href="#about" id="navAbout">Perfil</a>
+          <a href="#services" id="navServices">Stack</a>
         </nav>
-        <div class="lang-switch" aria-label="Language switcher">
-          <button class="lang-btn is-active" type="button" data-lang="es">ES</button>
-          <button class="lang-btn" type="button" data-lang="en">EN</button>
+        <div class="lang-toggle" aria-label="Language switcher">
+          <button class="lang-chip is-active" type="button" data-lang="es">ES</button>
+          <button class="lang-chip" type="button" data-lang="en">EN</button>
         </div>
       </div>
-    </header>
+    </aside>
 
-    <main id="top" class="shell">
+    <main id="top" class="page">
       <section class="hero">
-        <div class="hero-copy">
-          <div class="eyebrow" data-i18n="hero.eyebrow">Colombia · 16 años de experiencia</div>
-          <h1 id="heroTitle">
-            Ingeniero de desarrollo full stack orientado a telecomunicaciones, infraestructura y plataformas digitales de alto impacto.
-          </h1>
-          <p id="heroBody" class="hero-body">
-            Diseño, construyo y estabilizo productos web con visión de negocio, base técnica sólida y foco operativo. Combino desarrollo full stack, CMS, virtualización, VoIP y administración de infraestructura para llevar ideas a producción con criterio práctico.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-fill" href="#contact" data-i18n="hero.primaryCta">Contactar</a>
-            <button class="btn btn-ghost" id="copyEmailBtn" type="button" data-i18n="hero.secondaryCta">Copiar correo</button>
-          </div>
-          <ul class="hero-facts" aria-label="Profile facts">
-            <li>
-              <span class="fact-label" data-i18n="facts.roleLabel">Rol</span>
-              <strong data-i18n="facts.roleValue">Ingeniero de desarrollo full stack</strong>
-            </li>
-            <li>
-              <span class="fact-label" data-i18n="facts.locationLabel">Ubicación</span>
-              <strong data-i18n="facts.locationValue">Colombia</strong>
-            </li>
-            <li>
-              <span class="fact-label" data-i18n="facts.focusLabel">Foco</span>
-              <strong data-i18n="facts.focusValue">Telecomunicaciones e infraestructura</strong>
-            </li>
-          </ul>
-        </div>
-        <aside class="hero-panel">
-          <div class="panel-card">
-            <span class="panel-kicker" data-i18n="panel.kicker">Áreas principales</span>
-            <div class="signal-list">
-              <div class="signal-item">
-                <strong data-i18n="panel.webTitle">Full Stack Web</strong>
-                <span data-i18n="panel.webBody">Frontend, backend, APIs, integraciones y despliegue.</span>
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="hero-top">
+              <div class="idblock">
+                <img class="avatar" src="assets/avatar-01.svg" alt="" />
+                <div class="idcopy">
+                  <div class="idname" id="heroName">Henry Gomez</div>
+                  <div class="idrole" id="heroRole">Full stack engineer</div>
+                </div>
               </div>
-              <div class="signal-item">
-                <strong data-i18n="panel.cmsTitle">CMS & Plataformas</strong>
-                <span data-i18n="panel.cmsBody">WordPress y otros CMS para entornos corporativos y comerciales.</span>
+              <div class="hero-media" aria-label="Hero media">
+                <img class="hmedia hmedia-a" src="assets/hero-01.svg" alt="" />
+                <img class="hmedia hmedia-b" src="assets/hero-02.svg" alt="" />
+                <img class="hmedia hmedia-c" src="assets/hero-03.svg" alt="" />
               </div>
-              <div class="signal-item">
-                <strong data-i18n="panel.infraTitle">Infra & Telco</strong>
-                <span data-i18n="panel.infraBody">Proxmox, VoIP con Asterisk, virtualización y operación técnica.</span>
+            </div>
+
+            <div class="availability" aria-label="Availability">
+              <span class="avail-dot" aria-hidden="true"></span>
+              <span id="availabilityText">Disponible para proyectos ( Colombia / Remoto )</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span id="heroLine1">FULL STACK ENGINEER</span>
+              <span id="heroLine2">FOR DIGITAL PRODUCTS</span>
+              <span id="heroLine3">TELECOM SYSTEMS</span>
+              <span id="heroLine4">& INFRASTRUCTURE</span>
+            </h1>
+
+            <p class="hero-body" id="heroBody">
+              Combino 16 anos de experiencia en desarrollo full stack, plataformas CMS, telecomunicaciones e infraestructura para construir soluciones web estables, operables y alineadas con objetivos reales de negocio.
+            </p>
+
+            <div class="cta-rows" aria-label="Hero CTAs">
+              <div class="cta-row">
+                <button class="btn btn-outline" id="copyEmailA" type="button">Copiar correo</button>
+                <a class="btn btn-fill" id="bookCallA" href="#projects" rel="noreferrer">Ver proyecto destacado</a>
+              </div>
+              <div class="cta-row">
+                <button class="btn btn-outline" id="copyEmailB" type="button">Copiar correo</button>
+                <a class="btn btn-outline" id="contactLinkA" href="#" rel="noreferrer">Abrir LinkedIn</a>
               </div>
             </div>
           </div>
-        </aside>
-      </section>
-
-      <section id="about" class="section">
-        <div class="section-head">
-          <span class="section-kicker" data-i18n="about.kicker">Perfil</span>
-          <h2 data-i18n="about.title">Construyo soluciones útiles, estables y listas para operar.</h2>
-        </div>
-        <div class="about-grid">
-          <article class="about-card">
-            <p id="aboutBody1">
-              Mi perfil combina producto, implementación y operación. Trabajo tanto en la capa visible de una plataforma como en la infraestructura que la sostiene, con enfoque en rendimiento, continuidad y mantenimiento real.
-            </p>
-          </article>
-          <article class="about-card">
-            <p id="aboutBody2">
-              Además del desarrollo full stack, manejo CMS ampliamente usados, automatización de despliegues, soporte técnico y componentes de telecomunicaciones e infraestructura que suelen ser críticos en entornos empresariales.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="stack" class="section">
-        <div class="section-head">
-          <span class="section-kicker" data-i18n="stack.kicker">Capacidades</span>
-          <h2 data-i18n="stack.title">Stack principal y ecosistema técnico.</h2>
-        </div>
-        <div class="stack-grid">
-          <article class="stack-card">
-            <h3 data-i18n="stack.webTitle">Desarrollo full stack</h3>
-            <p data-i18n="stack.webBody">React, Next.js, JavaScript, TypeScript, Node.js, Express, APIs REST y arquitectura web moderna.</p>
-          </article>
-          <article class="stack-card">
-            <h3 data-i18n="stack.cmsTitle">CMS y plataformas</h3>
-            <p data-i18n="stack.cmsBody">WordPress, integración de CMS, sitios administrables, flujos editoriales y soluciones web orientadas a negocio.</p>
-          </article>
-          <article class="stack-card">
-            <h3 data-i18n="stack.infraTitle">Infraestructura y telecom</h3>
-            <p data-i18n="stack.infraBody">Proxmox, Asterisk, VoIP, virtualización, redes, servicios de infraestructura y operación técnica de plataformas.</p>
-          </article>
-        </div>
-        <div class="chips" id="skillChips" aria-label="Technology list"></div>
-      </section>
-
-      <section id="project" class="section">
-        <div class="section-head">
-          <span class="section-kicker" data-i18n="project.kicker">Proyecto destacado</span>
-          <h2 data-i18n="project.title">Trabajo actual en producto digital.</h2>
-        </div>
-        <article class="project-card">
-          <div class="project-meta">
-            <span class="project-badge">Devil TV</span>
-            <span class="project-type" data-i18n="project.type">Aplicación web estática</span>
+          <div class="hero-right">
+            <img class="astronaut" src="assets/hero-astronaut.svg" alt="" />
+            <div class="hero-schematic"></div>
           </div>
-          <h3 data-i18n="project.name">Media Evaluation Platform Static</h3>
-          <p data-i18n="project.body">
-            Plataforma web orientada a descubrimiento y evaluación de contenido, con mejoras continuas en búsqueda avanzada, UX, estabilidad de navegación, control de versiones y operación mediante GitHub.
-          </p>
-          <div class="project-tags">
-            <span>JavaScript</span>
-            <span>UX/UI</span>
-            <span>GitHub Pages</span>
-            <span>Search UX</span>
-            <span>Release Flow</span>
-          </div>
-          <div class="project-actions">
-            <a class="btn btn-fill" href="https://lerna-admin.github.io/media-evaluation-platform-static/" target="_blank" rel="noreferrer" data-i18n="project.primary">Ver proyecto</a>
-          </div>
-        </article>
+        </div>
       </section>
 
-      <section id="contact" class="section">
-        <div class="section-head">
-          <span class="section-kicker" data-i18n="contact.kicker">Contacto</span>
-          <h2 data-i18n="contact.title">Disponible para colaborar en productos, infraestructura y soluciones técnicas.</h2>
-        </div>
-        <div class="contact-grid">
-          <a class="contact-card" href="mailto:henry8812@gmail.com">
-            <span class="contact-label" data-i18n="contact.emailLabel">Correo</span>
-            <strong>henry8812@gmail.com</strong>
-          </a>
-          <a class="contact-card" href="https://github.com/xanadu8812" target="_blank" rel="noreferrer">
-            <span class="contact-label">GitHub</span>
-            <strong>xanadu8812</strong>
-          </a>
-          <a class="contact-card" href="https://www.linkedin.com/in/henry-gomez-98a954b1/" target="_blank" rel="noreferrer">
-            <span class="contact-label">LinkedIn</span>
-            <strong>Henry Gomez</strong>
-          </a>
+      <section id="projects" class="projects">
+        <div class="content-col">
+          <h2 class="section-title">
+            <span id="projectsLine1">FEATURED PROJECT,</span>
+            <span id="projectsLine2">CURRENT DIGITAL WORK.</span>
+          </h2>
+          <div id="projectGrid" class="project-stack" aria-label="Featured projects"></div>
         </div>
       </section>
+
+      <section class="transition">
+        <div class="content-col">
+          <img class="transition-media" src="assets/transition-01.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="content-col">
+          <h2 class="section-title">
+            <span id="capabilitiesLine1">CORE CAPABILITIES,</span>
+            <span id="capabilitiesLine2">REAL TECHNICAL FOCUS</span>
+          </h2>
+          <div id="testimonialGrid" class="testimonial-grid" aria-label="Capabilities"></div>
+        </div>
+      </section>
+
+      <section id="about" class="finalcta">
+        <div class="content-col">
+          <h2 class="final-title" id="aboutTitle">READY TO BUILD?</h2>
+          <div class="slashline" id="aboutSlashline">// full stack // cms // telecom // infrastructure //</div>
+          <div class="questions" aria-label="Questions">
+            <div id="aboutPoint1">✦ Desarrollo web full stack con enfoque practico y orientado a resultados.</div>
+            <div id="aboutPoint2">✦ Experiencia con WordPress y otros CMS para entornos administrables.</div>
+            <div id="aboutPoint3">✦ Operacion de infraestructura, virtualizacion, VoIP y servicios tecnicos.</div>
+            <div id="aboutPoint4">✦ Perfil util para productos que necesitan construir y operar al mismo tiempo.</div>
+          </div>
+          <div class="final-actions">
+            <button class="btn btn-outline" id="copyEmailC" type="button">Copiar correo</button>
+            <a class="btn btn-fill" id="bookCallB" href="#contact" rel="noreferrer">Contactar</a>
+          </div>
+        </div>
+      </section>
+
+      <footer id="services" class="footer">
+        <div class="content-col footer-inner">
+          <div class="foot-col">
+            <div class="foot-head" id="footerConnectLabel">Conectar</div>
+            <a class="foot-link" id="footerGithub" href="#" rel="noreferrer">Hablar conmigo en GitHub</a>
+          </div>
+          <div id="contact" class="foot-col">
+            <div class="foot-label">E-Mail</div>
+            <div class="foot-value" id="footerEmail">henry8812@gmail.com</div>
+          </div>
+          <div class="foot-col">
+            <div class="foot-label" id="footerThirdLabel">Ubicacion</div>
+            <div class="foot-value" id="footerThirdValue">Colombia</div>
+          </div>
+        </div>
+        <div class="content-col foot-legal">
+          <div class="copy" id="footerCopy">©2026 Henry Gomez</div>
+          <div class="legal" id="footerLegal">
+            Portafolio personal en evolucion continua. El contenido se actualiza de forma progresiva para reflejar proyectos reales, stack tecnico y capacidad operativa en desarrollo, telecomunicaciones e infraestructura.
+          </div>
+          <a class="framer" id="footerLinkedin" href="#" rel="noreferrer">Ver perfil de LinkedIn</a>
+        </div>
+      </footer>
     </main>
-
-    <footer class="footer">
-      <span>© 2026 Henry Gomez</span>
-      <span data-i18n="footer.copy">Portafolio bilingüe en construcción continua.</span>
-    </footer>
 
     <script src="app.js"></script>
   </body>
