@@ -1,7 +1,8 @@
 const CONFIG = {
   email: "henry8812@gmail.com",
   github: "https://github.com/xanadu8812",
-  linkedin: "https://www.linkedin.com/in/henry-gomez-98a954b1/"
+  linkedin: "https://www.linkedin.com/in/henry-gomez-98a954b1/",
+  calendly: "https://calendly.com/henry-lernagroup/30min"
 };
 
 const I18N = {
@@ -24,7 +25,7 @@ const I18N = {
     heroBody: "Combino 16 anos de experiencia en desarrollo full stack, plataformas CMS, telecomunicaciones e infraestructura para construir soluciones web estables, operables y alineadas con objetivos reales de negocio.",
     copyEmail: "Copiar correo",
     copied: "Correo copiado",
-    ctaPrimary: "Ver proyecto destacado",
+    ctaPrimary: "Agendar 30 minutos",
     ctaSecondary: "Abrir LinkedIn",
     projectsTitle: ["PROYECTO DESTACADO,", "TRABAJO DIGITAL ACTUAL."],
     capabilitiesTitle: ["CAPACIDADES CLAVE,", "ENFOQUE TECNICO REAL"],
@@ -36,7 +37,7 @@ const I18N = {
       "✦ Operacion de infraestructura, virtualizacion, VoIP y servicios tecnicos.",
       "✦ Perfil util para productos que necesitan construir y operar al mismo tiempo."
     ],
-    contactCta: "Contactar",
+    contactCta: "Agendar llamada",
     footerConnectLabel: "Conectar",
     footerGithub: "Hablar conmigo en GitHub",
     footerThirdLabel: "Ubicacion",
@@ -91,7 +92,7 @@ const I18N = {
     heroBody: "I combine 16 years of experience in full stack development, CMS platforms, telecommunications and infrastructure to build web solutions that are stable, operational and aligned with real business goals.",
     copyEmail: "Copy e-mail",
     copied: "E-mail copied",
-    ctaPrimary: "View featured project",
+    ctaPrimary: "Book 30 minutes",
     ctaSecondary: "Open LinkedIn",
     projectsTitle: ["FEATURED PROJECT,", "CURRENT DIGITAL WORK."],
     capabilitiesTitle: ["CORE CAPABILITIES,", "REAL TECHNICAL FOCUS"],
@@ -103,7 +104,7 @@ const I18N = {
       "✦ Infrastructure operations, virtualization, VoIP and technical services.",
       "✦ Useful profile for products that need both delivery and operations."
     ],
-    contactCta: "Contact",
+    contactCta: "Book a call",
     footerConnectLabel: "Connect",
     footerGithub: "Talk to me on GitHub",
     footerThirdLabel: "Location",
@@ -244,8 +245,12 @@ function applyContent(lang) {
   $("#footerLinkedin").textContent = copy.footerLinkedin;
   document.querySelectorAll(".foot-label")[0].textContent = lang === "es" ? "Correo" : "E-mail";
 
-  $("#bookCallA").href = "#projects";
-  $("#bookCallB").href = "#contact";
+  $("#bookCallA").href = CONFIG.calendly;
+  $("#bookCallB").href = CONFIG.calendly;
+  $("#bookCallA").target = "_blank";
+  $("#bookCallB").target = "_blank";
+  $("#bookCallA").rel = "noreferrer";
+  $("#bookCallB").rel = "noreferrer";
   $("#contactLinkA").href = CONFIG.linkedin;
   $("#footerGithub").href = CONFIG.github;
   $("#footerLinkedin").href = CONFIG.linkedin;
